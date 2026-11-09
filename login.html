@@ -1,0 +1,143 @@
+git commit -m "first commit"<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: #e8eaf6;
+        }
+
+        .maincon {
+            display: flex;
+            width: 850px;
+            max-width: 95%;
+            min-height: 500px;
+            margin: 60px auto;
+            border-radius: 15px;
+            overflow: hidden;
+            background-color: white;
+        }
+
+        .left {
+            width: 50%;
+            background-image: linear-gradient(to right, rgb(63, 48, 117), rgb(0, 217, 255));
+            color: white;
+            padding: 60px 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .right {
+            width: 50%;
+            background-color: #ffffff;
+            padding: 40px 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 12px 35px;
+            margin-top: 15px;
+            background-color: #512da8;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .signin {
+            padding: 12px 35px;
+            border: 1px solid white;
+            border-radius: 20px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .fabrands {
+            border: white solid 2px;
+            border-radius: 10px;
+        }
+
+        .icon {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+
+        .icon div {
+            width: 30px;
+            height: 21px;
+            border: 2px solid black;
+            border-radius: 2px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .icon div i {
+            display: block;
+            line-height: 1;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="maincon">
+
+        <div class="left">
+            <h1>Welcome Back</h1>
+            <p>Enter your personal details to use all of the site <br> features</p>
+            <div class="signin">SIGN IN</div>
+        </div>
+
+        <div class="right">
+            <h1>Create Account</h1>
+
+            <div class="icon">
+                <div><i class="fa-brands fa-google-plus-g" ;></i></div>
+                <div><i class="fa-brands fa-facebook-f"></i></div>
+                <div><i class="fa-brands fa-github"></i></div>
+                <div><i class="fa-brands fa-linkedin-in"></i></div>
+            </div>
+            <p>or use your emaile for registration</p>
+
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+
+            <button>SIGN UP</button>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
